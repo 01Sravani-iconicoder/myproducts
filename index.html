@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meesho</title>
+    <link rel="shortcut icon" href="https://www.forbesindia.com/media/images/2023/Jun/img_209849_meeshonewlogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5YbO1Q" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="https://cdn.cutshort.io/public/companies/59a7d97a0adfdb705f964d3b/meesho-logo" alt="logo pic" height="75px" width="75px">
+            <h1 style="color: rgb(138, 9, 80); font-size: 40px; ">Meesho</h1>
+            <input type="text" placeholder="Try sarees, Kurties or search for products" style="height: 40px; width: 400px; font-size: 25px; margin-left: 20px;"><button style="height: 40px; width: 50px; font-size: 25px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="menucart">
+            <button style="height: 40px; width: 40px; font-size: 25px; color: rgb(138, 9, 80);"><i class="fa-solid fa-cart-plus" class="cart"></i></button>
+            <button style="height: 40px; width: 40px; font-size: 25px; color: rgb(138, 9, 80);" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header><br>
+    <div id="mySidenav" class="sidenav">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <i class="fa-solid fa-user" id="profile"></i>
+        <h2><a href="">User-Name</a></h2>
+        <h2><a href="">Setting</a></h2>
+        <h2><a href="">Privacy</a></h2>
+        <h2><a href="">Orders</a></h2>
+        <h2><a href="">Payments</a></h2>
+        <div>
+            <h2><a href="">create account</a></h2>
+            <h3><a href="">Logout</a></h3>
+        </div>
+      </div>
+
+    <div class="modal" id="md">
+        <div class="close"><button onclick="closee()">❌</button></div><br>
+        <div class="counter">
+            <p class="para0">0</p>
+            <div class="button">
+                <button onclick="incr()"><strong>+</strong></button>
+                <button onclick="decr()"><strong>-</strong></button>
+                <button onclick="reset()"><strong>reset</strong></button>
+            </div>
+            </div>
+    </div>
+    <main>
+        <div class="main">
+            <div class="mainleft" style="width: 70%;">
+                <h1 style="font-size: 60px; color: rgb(63, 62, 62);">Lowest Prices <br>Best Quality Shopping</h1>
+                <a href="https://play.google.com/store/search?q=meesho&c=apps&hl=en-IN"><button><img src="https://www.svgrepo.com/show/223032/playstore.svg" alt="playstore" height="35px"><h2>Dowload Meesho</h2></button></a>
+            </div>
+            <div class="mainright" style="width: 30%;">
+                <a href=""><img src="https://shaadiwish.com/blog/wp-content/uploads/2021/11/bride-and-brdiesmaids-photoshoot.jpg" alt="female"></a>
+                <a href=""><img src="https://cdn0.weddingwire.in/article/8137/original/1280/jpg/107318-wedding-dresses-for-men-2.jpeg" alt="male"></a>
+                <a href=""><img src="https://img.tkmaxx.com/medias/G22-UK-CLPShoes-S4-Sandals-080223-mp.jpg?context=bWFzdGVyfGNvbnRlbnQtaW1hZ2VzfDM3MjkyfGltYWdlL2pwZWd8Y29udGVudC1pbWFnZXMvaDE5L2g4Yy8xMjk2NzUyMTE1NzE1MC5qcGd8MzQ5NDhmZWQzYTE0NWNkZmQ2MTlhYTlhMTA0MWI4OWIwMzA1N2YxYzkwMWMzOGQzOTA2NDBmY2MxZWNhNmI1Zg" alt="snadles"></a>
+                <a href=""><img src="https://images.meesho.com/images/products/40490361/t7pot_512.webp" alt="jwellary"></a>
+            </div>
+        </div>
+        <div id="results">
+
+        </div>
+        
+    </main>
+    
+    <!-- <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <div id="md" class="model"> -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
